@@ -83,4 +83,4 @@ Tasks:
 - Streamlit Web App: Live deployment link for interactive exploration of climate predictions.
 
 ## Conclusion:
-This project will equip you with essential skills in data preprocessing, exploratory data analysis, machine learning modeling, and deploying a web application using Streamlit. It leverages freely available climate data to gain insights into climate change patterns specific to Tanzania. Adjustments can be made based on specific datasets you find during your exploration.
+This project will equip you with essential skills in data preprocessing, exploratory data analysis, machine learning modeling, and deploying a web application using Streamlit. It leverages freely available climate data to gain insights into climate change patterns specific to Tanzania. Adjustments can be made based on specific datasets you find during your exploration.# Rainfall_Changes_Tanzania
