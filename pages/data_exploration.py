@@ -9,7 +9,7 @@ def show(df):
     st.header(" Data Exploration")
 
     # Show the raw data
-    st.subheader("Raw Temperature Data ")
+    st.subheader("Raw Temperature and rainfall Data ")
     st.dataframe(df.head(10))
 
     # Show the basic statistics

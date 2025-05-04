@@ -43,7 +43,7 @@ def plot_actual_vs_Predicted_Rainfall(y_test, y_pred):
     """
     Plt the actual vs predicted values
     """
-    fig, ax = plt.subplot(figsize = (10,6))
+    fig, ax = plt.subplots(figsize = (10,6))
     ax.scatter(y_test, y_pred, alpha = 0.7 )
     ax.plot([min(y_test), max(y_test)],[min(y_test), max(y_test)], 'r--' )
     ax.set_xlabel("Actual Rainfall")

@@ -45,10 +45,10 @@ def evaluate_model(model, X_train, y_train, X_test, y_test):
 
     return metrics
 
-# Save the model
+# Save the model 
 def save_model(model, filename = 'climate_model.pkl'):
     """
-    save the mdoel to the disk
+    save the model to the disk
     """
     with open(filename, 'wb') as file:
         pickle.dump(model, file)

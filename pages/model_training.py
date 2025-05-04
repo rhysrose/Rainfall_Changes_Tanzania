@@ -44,7 +44,7 @@ def show(df):
             
             # Plot the actual vs the predicted 
             st.subheader("Actual vs Predicted (test data)")
-            fig = plot_actual_vs_predicted(metrics['y_test'], metrics['y_pred_test'])
+            fig = plot_actual_vs_Predicted_Rainfall(metrics['y_test'], metrics['y_pred_test'])
             st.pyplot(fig)
 
             # Save the model
