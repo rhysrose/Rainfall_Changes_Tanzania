@@ -33,7 +33,7 @@ def show(df):
         model = st.session_state['model']
 
         # Make prediction
-        prediction = make_prediction(model, pred_year, pred_month)
+        prediction = make_prediction(model, pred_year, pred_month, avg_temp, max_temp, min_temp)
 
         # Display the results
         st.success(f"Predicted Rainfall for {pred_year}-{pred_month:02d} : {prediction:.2f} C")
