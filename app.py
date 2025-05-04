@@ -15,7 +15,7 @@ st.markdown("Analyze the Historical Rainfall and Predict Future Trends")
 
 #load the data
 #filepath = r"/Users/rosepeterfunja/Tanzania_KIC/Assignment/capstone-project-rhysrose/data/tanzania_climate_data.csv"
-filepath = "tanzania_climate_data.csv"
+filepath = "data/tanzania_climate_data.csv"
 df = load_data(filepath)
 
 #Check if data is loaded 
