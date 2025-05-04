@@ -7,7 +7,7 @@ def plot_time_series(df):
     """
     Plot the rainfall over time
     """
-    fig, ax = plt.subplot(figsize = (10.6))
+    fig, ax = plt.subplots(figsize = (10,6))
     ax.plot(df['Date'], df['Total_Rainfall_mm'])
     ax.set_xlabel("Date")
     ax.set_ylabel("Rainfal in mm")
@@ -19,8 +19,8 @@ def plot_seasonal_patterns(df):
     """
     Plot monthly rainfall distributions
     """ 
-    fig, ax = plt.subplot(figsize = (10.6))
-    ax.plot( x = 'Month', y = 'Total_Rainfall_mm', data = df, ax = ax)
+    fig, ax = plt.subplots(figsize = (10,6))
+    sns.boxplot( x = 'Month', y = 'Total_Rainfall_mm', data = df, ax = ax)
     ax.set_xlabel("Month")
     ax.set_ylabel("Rainfal in mm")
     ax.set_title("Monthly Rainfall Distributions")
@@ -30,9 +30,9 @@ def plot_yearly_trends(df):
     """
     Plot the yearly average  rainfall 
     """
-    year_avg = df.groupy('Year')['Total_Rainfall_mm'].mean().reset_index()
-    fig, ax = plt.subplot(figsize = (10.6))
-    ax.plot(year_avg),year_avg['Total_Rainfall_mm'], marker = 'o'
+    year_avg = df.groupby('Year')['Total_Rainfall_mm'].mean().reset_index()
+    fig, ax = plt.subplots(figsize = (10,6))
+    ax.plot(year_avg['Year'],year_avg['Total_Rainfall_mm'], marker = 'o')
     ax.set_xlabel("Year")
     ax.set_ylabel("Rainfal in mm")
     ax.set_title("Yearly Average Rainfall")
@@ -43,7 +43,7 @@ def plot_actual_vs_Predicted_Rainfall(y_test, y_pred):
     """
     Plt the actual vs predicted values
     """
-    fig, ax = plt.subplot(figsize = (10.6))
+    fig, ax = plt.subplot(figsize = (10,6))
     ax.scatter(y_test, y_pred, alpha = 0.7 )
     ax.plot([min(y_test), max(y_test)],[min(y_test), max(y_test)], 'r--' )
     ax.set_xlabel("Actual Rainfall")
