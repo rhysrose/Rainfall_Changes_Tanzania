@@ -38,6 +38,6 @@ def get_historical_context(df, month):
 
 def get_historical_average(df, month):
     """
-    Get historical Average rain for a given month
+    Get historical Average rain for a given monthecho "# Rainfall_Changes_Tanzania" >> README.md
     """
     return df[df['Month'] == month]['Total_Rainfall_mm'].mean()

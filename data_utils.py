@@ -4,8 +4,8 @@ import numpy as np
 import streamlit as st
 
 #load the data
-filepath = r"/Users/rosepeterfunja/Tanzania_KIC/Assignment/capstone-project-rhysrose/data/tanzania_climate_data.csv"
-
+#filepath = r"/Users/rosepeterfunja/Tanzania_KIC/Assignment/capstone-project-rhysrose/data/tanzania_climate_data.csv"
+filepath = "tanzania_climate_data.csv"
 @st.cache_data
 def load_data(filepath):
     """
