@@ -20,6 +20,8 @@ def load_data(filepath):
 
     try:
         data = pd.read_csv(filepath)
+        # Create a Date column by combining Year and Month
+        data['Date'] = pd.to_datetime(data[['Year', 'Month']].assign(DAY=1))
         return data
     except FileNotFoundError:
         st.error(f"File not found: {filepath}")
